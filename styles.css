@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color for the whole page */
+}
+
+.container {
+    width: 30%;
+    height: 50%;
+    background-color: #ffffff; /* Background color for the container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align content horizontally center */
+}
+/* Center align the submit button */
+button[type="submit"] {
+    font-size: 18px; /* Adjust font size */
+    padding: 12px 20px; /* Adjust padding */
+    height: 35px;
+     width: 250px;/* Adjust height */
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center align horizontally */
+    background-color: blue; /* Blue color for the background */
+    color: white; /* White color for the text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+}
+
+button[type="submit"]:hover {
+    background-color: blue; /* Darker shade of blue on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.error-icon {
+    background-image: url('icon-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide increase/decrease arrows in number input fields */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
